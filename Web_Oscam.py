@@ -17,7 +17,7 @@ params = {"id": "server.config", "action": "execute",
           "device": device, "port": port,
           "user": user, "password": password, "action": "Save"
           }
-url = 'http://192.168.1.56:8080/server_config.html?label=Reader-7'
-r = requests.get(url, auth=HTTPDigestAuth('jorge', '0000'), params=params)
+url = 'http://192.168.1.56:8080/server_config.html?label=Reader-7' # Cambia la url por la de tu deco
+r = requests.get(url, auth=HTTPDigestAuth('usuario', '0000'), params=params) # Cambia el "usuario" y "password"
 
 print(r.status_code)
